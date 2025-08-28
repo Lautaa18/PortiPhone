@@ -18,3 +18,11 @@
   gap: 2rem;
   padding: 2rem;
 }
+.sidebar {
+  width: 20%;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
