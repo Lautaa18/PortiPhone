@@ -1,3 +1,14 @@
 .logo{
-    margin-left: 50%;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+.TituloPag{
+    font-family:sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 0px;
+}
+.Header{
+    display: flex;
+    align-items: center;
 }
