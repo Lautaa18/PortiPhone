@@ -2,14 +2,14 @@ a{
     text-decoration: none;
 }
 .logo{
-    margin-left: 26%;
+    margin-left: 27%;
     border-radius: 50%;
 }
 .TituloPag{
     font-family:sans-serif;
     font-size: 50px;
     color: rgb(0, 0, 0);
-    padding-left: 1%;
+    padding-left: 5%;
 }
 .Header{
     display: flex;
