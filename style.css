@@ -1,17 +1,20 @@
-
+a{
+    text-decoration: none;
+}
 .logo{
-    margin-left: 26%;
+    margin-left: 27%;
     border-radius: 50%;
 }
 .TituloPag{
     font-family:sans-serif;
     font-size: 50px;
     color: rgb(0, 0, 0);
-    padding-left: 0px;
+    padding-left: 5%;
 }
 .Header{
     display: flex;
     align-items: center;
+    background-color: rgb(230, 229, 229);
 }
 .Navegador{
     padding: 10px; 
@@ -19,7 +22,7 @@
     font-size: 30px;
     display: flex;
     margin-left: auto;
-    margin-right: 3%;
+    margin-right: 4%;
     text-align: center;
     gap: 20px;
 }
@@ -36,3 +39,19 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
+
+.Navegador p{
+    color: black;
+}
+footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(230, 229, 229);
+    padding: 10px;
+    margin-top:30px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
