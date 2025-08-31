@@ -1,2 +1,2 @@
 # Proyecto_Grupal
-Somos una tienda de Iphones y y todo lo relacionado con el mundo Apple.
+Somos PortiPhone una tienda de Iphones y y todo lo relacionado con el mundo Apple, en nuestra pagina web puede acceder a todo nuestro catalogo y demas.
