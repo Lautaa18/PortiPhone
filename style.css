@@ -80,12 +80,18 @@ body{
   padding: 1rem;
 }
 .btn_carrito{
+text-align: center;
 background: #007bff;
 color: white;
 padding: 10px 15px;
 border-radius:20px;
 text-decoration: none;
 transition:cubic-bezier(1, 0, 0, 1).3s;
+}
+img.img_carrito{
+    vertical-align: middle;
+    margin-left: 8px;
+
 }
 
 .btn:hover{
