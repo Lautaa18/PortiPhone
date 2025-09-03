@@ -90,3 +90,6 @@ transition:cubic-bezier(1, 0, 0, 1).3s;
 .btn:hover{
     background: #0056b3;
 }
+.img_product{
+    border-radius: 15px;
+}
