@@ -55,3 +55,19 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.grid, .productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
+  text-align: center;
+  transition: transform 0.2s;
+  padding: 1rem;
+}
