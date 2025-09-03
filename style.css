@@ -79,7 +79,7 @@ body{
   transition: transform 0.2s;
   padding: 1rem;
 }
-.btn{
+.btn_carrito{
 background: #007bff;
 color: white;
 padding: 10px 15px;
