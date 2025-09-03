@@ -85,7 +85,7 @@ color: white;
 padding: 10px 15px;
 border-radius:20px;
 text-decoration: none;
-transition:cubic-bezier(1, 0, 0, 1).3s;
+transition: (1, 0, 0, 1.3s);
 }
 
 .btn:hover{
