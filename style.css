@@ -62,4 +62,31 @@ body{
     padding: 16px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     height: 500px;
+
+.grid, .productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
+  text-align: center;
+  transition: transform 0.2s;
+  padding: 1rem;
+}
+.btn{
+background: #007bff;
+color: white;
+padding: 10px 15px;
+border-radius:20px;
+text-decoration: none;
+transition:cubic-bezier(1, 0, 0, 1).3s;
+}
+
+.btn:hover{
+    background: #0056b3;
 }
