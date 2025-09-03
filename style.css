@@ -75,7 +75,7 @@ body{
     margin-right: 1%;
 }
 
-.grid, .productos {
+.productos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem;
