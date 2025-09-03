@@ -68,6 +68,8 @@ body{
     padding: 16px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     height: 500px;
+    margin-left: auto;
+    margin-right: 1%;
 }
 
 .grid, .productos {
