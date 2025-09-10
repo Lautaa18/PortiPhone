@@ -71,8 +71,9 @@ body{
 .productos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 2rem;
+  justify-content: center;
 }
 
 .card {
@@ -81,7 +82,9 @@ body{
   box-shadow: 0 3px 12px rgba(0,0,0,0.8);
   text-align: center;
   transition: transform 0.2s;
-  padding: 1rem;
+  width: 220px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
 }
 .btn_carrito{
 text-align: center;
@@ -102,6 +105,10 @@ img.img_carrito{
     background: #0056b3;
 }
 .img_product{
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
     border-radius: 15px;
 }
 
