@@ -13,7 +13,16 @@
     align-items: center;
     background-color: rgb(230, 229, 229);
 }
-
+.Navegador{
+    padding: 10px; 
+    font-family: serif;
+    font-size: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 4%;
+    text-align: center;
+    gap: 20px;
+}
 
 
 .productos2 {
