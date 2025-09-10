@@ -94,3 +94,16 @@ transition:cubic-bezier(1, 0, 0, 1).3s;
 .img_product{
     border-radius: 15px;
 }
+.productos {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.producto1 { grid-area: 1 / 1 / 2 / 2; }
+.producto2 { grid-area: 1 / 2 / 2 / 3; }
+.producto3 { grid-area: 1 / 3 / 2 / 4; }
+.producto4 { grid-area: 2 / 1 / 3 / 2; }
+.producto5 { grid-area: 2 / 2 / 3 / 3; }
