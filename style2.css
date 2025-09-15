@@ -63,3 +63,18 @@ body{
     color: rgb(0, 0, 0);
     padding-left: 5%;
 }
+
+.btn_carrito {
+  margin-top: auto;  
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.img_carrito{
+    vertical-align: -5px;
+    margin-left: 8px;
+
+}
