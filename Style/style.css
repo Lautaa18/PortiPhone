@@ -90,7 +90,7 @@ body{
   justify-content: space-between; 
 }
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.705);
 }
 .btn_carrito {
@@ -101,6 +101,11 @@ body{
   padding: 10px 15px;
   border-radius: 20px;
   text-decoration: none;
+}
+.btn_carrito:hover {
+  background: #0056b3;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 .img_carrito{
     vertical-align: -5px;
