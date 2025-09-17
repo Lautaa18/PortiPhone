@@ -78,3 +78,15 @@ body{
     margin-left: 8px;
 
 }
+.catalogo2{
+    vertical-align: -5px;
+    margin-left:8px;
+    display:inline-block;
+    padding: 10px 20px;
+    background-color:blueviolet;
+    text-decoration: none;
+    border-radius:8px;
+    transition:0.3s;
+    text-decoration: underline;
+  text-decoration-color: black
+}
