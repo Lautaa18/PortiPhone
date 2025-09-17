@@ -83,6 +83,8 @@ body{
   gap: 1.5rem;
   padding: 2rem;
   justify-content: center;
+  margin-left: 95px;
+  margin-right: 75px;
 }
 
 .card {
