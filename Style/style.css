@@ -156,6 +156,7 @@ body{
 .producto3 { grid-area: 1 / 3 / 2 / 4; }
 .producto4 { grid-area: 2 / 1 / 3 / 2; }
 .producto5 { grid-area: 2 / 2 / 3 / 3; }
+.producto6 { grid-area: 2 / 3 / 3 / 4; }
 
 
 
