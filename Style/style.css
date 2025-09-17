@@ -38,10 +38,10 @@ a{
 }
 .sidebar {
   width: 15%;
-  background: #fafafa;
+  background: #ffffff;
   border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.331);
   height: 400px;
   margin-left: 1%;
   margin-right: auto;
@@ -64,10 +64,10 @@ body{
 }
 .sidebar2{
     width: 15%;
-    background: #fafafa;
+    background: #ffffff;
     border-radius: 12px;
     padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.331);
     height: 700px;
     margin-left: auto;
     margin-right: 1%;
