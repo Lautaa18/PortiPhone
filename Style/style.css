@@ -27,6 +27,9 @@ a{
     margin-right: 4%;
     text-align: center;
     gap: 20px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 .container {
   display: flex;
