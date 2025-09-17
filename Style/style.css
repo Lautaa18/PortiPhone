@@ -85,7 +85,6 @@ body{
   width: 220px;
   padding: 0.8rem;
   font-size: 0.9rem;
-
   display: flex;             
   flex-direction: column;   
   justify-content: space-between; 
@@ -104,10 +103,6 @@ body{
     margin-left: 8px;
 
 }
-
-.btn:hover{
-    background: #0056b3;
-}
 .img_product {
     width: 100%;
     height: 150px;
@@ -116,22 +111,6 @@ body{
     image-rendering: auto; 
 }
 
-
-.productos2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.card2 {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
-  text-align: center;
-  transition: transform 0.2s;
-  padding: 1rem;
-}
 .iconAside{
     width: 20px;
     height: 20px;
