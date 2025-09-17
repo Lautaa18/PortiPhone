@@ -79,16 +79,19 @@ body{
 .card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.331);
   text-align: center;
   transition: transform 0.2s;
   width: 220px;
   padding: 0.8rem;
   font-size: 0.9rem;
-
   display: flex;             
   flex-direction: column;   
   justify-content: space-between; 
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.705);
 }
 .btn_carrito {
   margin-top: auto;  
@@ -99,14 +102,15 @@ body{
   border-radius: 20px;
   text-decoration: none;
 }
+.btn_carrito:hover {
+  background: #0056b3;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
 .img_carrito{
     vertical-align: -5px;
     margin-left: 8px;
 
-}
-
-.btn:hover{
-    background: #0056b3;
 }
 .img_product {
     width: 100%;
@@ -116,22 +120,6 @@ body{
     image-rendering: auto; 
 }
 
-
-.productos2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.card2 {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
-  text-align: center;
-  transition: transform 0.2s;
-  padding: 1rem;
-}
 .iconAside{
     width: 20px;
     height: 20px;
