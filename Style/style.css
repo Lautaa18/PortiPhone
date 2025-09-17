@@ -79,7 +79,7 @@ body{
 .card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.8);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.331);
   text-align: center;
   transition: transform 0.2s;
   width: 220px;
@@ -88,6 +88,10 @@ body{
   display: flex;             
   flex-direction: column;   
   justify-content: space-between; 
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.705);
 }
 .btn_carrito {
   margin-top: auto;  
