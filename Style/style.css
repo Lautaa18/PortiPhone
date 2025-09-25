@@ -40,6 +40,7 @@ a{
     transform: scale(1.1);
     cursor: pointer;
     transition: ease 0.1s;
+    color: black;
 }
 .container {
   display: flex;
@@ -65,7 +66,7 @@ a{
     margin-bottom: 0px;
 }
 .Navegador p{
-    color: black;
+    color: rgba(0, 0, 0, 0.877);
 }
 
 body{
