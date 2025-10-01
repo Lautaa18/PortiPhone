@@ -157,3 +157,7 @@ form .botones {
   font-size: 0.9rem;
   color: #555;
 }
+.cuadro {
+  width: 120px;
+  height: 120px;
+}
