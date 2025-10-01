@@ -171,3 +171,13 @@ form .botones {
   overflow: hidden;
   transition: all 0.8s ease;
 }
+.cuadro::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    red, orange, yellow, lime, cyan, blue, violet, red
+  );
+  animation: spin 4s linear infinite;
+  z-index: 0;
+}
