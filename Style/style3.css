@@ -160,4 +160,6 @@ form .botones {
 .cuadro {
   width: 120px;
   height: 120px;
+  display: flex;
+  
 }
