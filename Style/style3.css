@@ -181,3 +181,22 @@ form .botones {
   animation: spin 4s linear infinite;
   z-index: 0;
 }
+.cuadro::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #111; /* fondo interno */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.cuadro span {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
