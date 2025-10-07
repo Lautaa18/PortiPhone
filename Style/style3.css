@@ -183,3 +183,45 @@ form .botones {
   font-size: 0.9rem;
   color: #555;
 }
+main section {
+  max-width: 700px;
+  margin: 6rem auto; /* antes decía 2rem, lo subimos a 6rem */
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form .botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+input[type="submit"], input[type="reset"] {
+  width: 48%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"] {
+  background: #0071e3;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #005bb5;
+}
+
+input[type="reset"] {
+  background: #ccc;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background: #999;
+}
