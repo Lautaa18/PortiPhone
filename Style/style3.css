@@ -27,17 +27,24 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.Navegador {
+  display: flex;
+  gap: 2rem; /* Espacio entre los enlaces */
+  align-items: center;
+}
+
 .Navegador a {
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 500;
   color: #1d1d1f;
   transition: 0.3s;
 }
 
 .Navegador a:hover {
-  color: #101010;
+  color: #0071e3;
 }
+
+
 
 /* --- CONTACTO --- */
 .contacto-caja {
