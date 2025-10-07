@@ -6,7 +6,7 @@ body {
   color: #1d1d1f;
 }
 
-/* Header */
+
 .Header {
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ body {
 
 .Navegador {
   display: flex;
-  gap: 2rem; /* Espacio entre los enlaces */
+  gap: 2rem; 
   align-items: center;
 }
 
@@ -46,7 +46,7 @@ body {
 
 
 
-/* --- CONTACTO --- */
+
 .contacto-caja {
   max-width: 700px;
   margin: 3rem auto;
@@ -55,12 +55,15 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: all 0.5s ease;
-  height: 120px; /* cerrado */
+  height: 120px; 
 }
 
 .contacto-caja:hover {
-  height: 700px; /* se despliega */
+  height: auto; 
+  min-height: 700px; 
+  padding-bottom: 2rem; 
 }
+
 
 .contacto-header {
   text-align: center;
@@ -90,11 +93,12 @@ body {
 
 .contacto-caja:hover .contacto-contenido {
   opacity: 1;
-  max-height: 1000px;
-  padding: 2rem;
+  max-height: 2000px; 
+  padding: 2rem; 
 }
 
-/* Formulario original */
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -174,7 +178,7 @@ form .botones {
   margin-top: 1rem;
 }
 
-/* Footer */
+
 .footer {
   text-align: center;
   padding: 1rem;
@@ -185,7 +189,7 @@ form .botones {
 }
 main section {
   max-width: 700px;
-  margin: 6rem auto; /* antes decía 2rem, lo subimos a 6rem */
+  margin: 6rem auto; 
   background: #ffffff;
   padding: 2rem;
   border-radius: 20px;
