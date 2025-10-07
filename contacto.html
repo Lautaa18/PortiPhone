@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortiPhone - contacto</title>
+    <title>PortiPhone - Contacto</title>
     <link rel="icon" href="imagenes/portiphone logo.jpeg">
     <link rel="stylesheet" href="Style/style3.css">
 </head>
@@ -13,41 +13,48 @@
         <img class="logo" src="imagenes/portiphone logo.jpeg" alt="Logo de PortiPhone" width="100" height="100" title="Logo de PortiPhone">
         <nav class="Navegador">
             <a href="index.html"><p>Inicio</p></a>
-             <a href="productos.html"><p>Productos</p></a>
-             <a href="contacto.html"><p>Contacto</p></a>
+            <a href="productos.html"><p>Productos</p></a>
+            <a href="contacto.html"><p>Contacto</p></a>
         </nav>
-
     </header>
+
     <main>
-              <section>
+        <section class="contacto-caja">
+            <div class="contacto-header">
                 <h1>Contacto</h1>
-                <p>Si desea contactarnos via correo escriba <a href="portphone@gmail.com">portphone@gmail.com</a></p>
-                <p>Si desea contactarnos via telefonica comuniquese al 2996292331</p>
-                <p>Si desea que lo contactemos porfavor llene el siguiente formulario</p>
+                <p>Pasá el mouse para desplegar el formulario</p>
+            </div>
+
+            <div class="contacto-contenido">
+                <p>Si desea contactarnos vía correo escriba a <a href="mailto:portphone@gmail.com">portphone@gmail.com</a></p>
+                <p>O comuníquese al 2996292331</p>
+                <p>También puede llenar el siguiente formulario:</p>
+
                 <form>
                     <fieldset>
                         <legend>Formulario de contacto</legend>
-                            <label for="nombre">Nombre</label>
-                             <input type="text" name="Nombre" id="Nombre" required><br>
+                        
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" required><br>
 
-                             <label for="email">Correo electronico</label>
-                             <input type="email" name="Correo" id="Correo" required><br>
+                        <label for="Correo">Correo electrónico</label>
+                        <input type="email" name="Correo" id="Correo" required><br>
 
-                             <label for="mensaje">Mensaje</label><br>
-                             <textarea id="mensaje" rows="5" placeholder="Escriba su cosulta...">
-                             </textarea><br>
-                             </fieldset><br>
-                             <div class="botones">
-                                  <input type="submit" name="Enviar" value="Enviar datos">
-                                  <input type="reset" id="Eliminar" value="Eliminar datos">
-                            </div>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" rows="5" placeholder="Escriba su consulta..." required></textarea><br>
+                    </fieldset><br>
 
+                    <div class="botones">
+                        <input type="submit" name="Enviar" value="Enviar datos">
+                        <input type="reset" id="Eliminar" value="Eliminar datos">
+                    </div>
                 </form>
-              </section>
-             </main>
-         <footer class="footer">
-        <p>©2025 PortiPhone. Todo lo relacionado a Apple. </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>©2025 PortiPhone. Todo lo relacionado a Apple.</p>
     </footer>
-    
 </body>
 </html>

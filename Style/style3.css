@@ -6,7 +6,7 @@ body {
   color: #1d1d1f;
 }
 
-
+/* Header */
 .Header {
   display: flex;
   align-items: center;
@@ -39,37 +39,55 @@ body {
   color: #101010;
 }
 
-
-main section {
+/* --- CONTACTO --- */
+.contacto-caja {
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   background: #ffffff;
-  padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 120px; /* cerrado */
 }
 
-main section h1 {
+.contacto-caja:hover {
+  height: 700px; /* se despliega */
+}
+
+.contacto-header {
   text-align: center;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.contacto-header h1 {
+  margin: 0;
   color: #111112;
-  margin-bottom: 1.5rem;
 }
 
-main section p {
-  margin: 0.8rem 0;
-  font-size: 1rem;
+.contacto-header p {
+  margin: 0.5rem 0 0;
+  color: #555;
+  font-size: 0.9rem;
 }
 
-main section a {
-  color: #0071e3;
-  text-decoration: none;
+.contacto-contenido {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 2rem;
+  transition: all 0.6s ease;
 }
 
-main section a:hover {
-  text-decoration: underline;
+.contacto-caja:hover .contacto-contenido {
+  opacity: 1;
+  max-height: 1000px;
+  padding: 2rem;
 }
 
-
+/* Formulario original */
 form {
   display: flex;
   flex-direction: column;
@@ -149,6 +167,7 @@ form .botones {
   margin-top: 1rem;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
@@ -156,69 +175,4 @@ form .botones {
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #555;
-}
-.cuadro {
-  width: 120px;
-  height: 120px;
-  display: flex;
-   align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.8s ease;
-}
-.cuadro::before {
-  content: "";
-  position: absolute;
-  inset: -50%;
-  background: conic-gradient(
-    red, orange, yellow, lime, cyan, blue, violet, red
-  );
-  animation: spin 4s linear infinite;
-  z-index: 0;
-}
-.cuadro::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  background: #111; /* fondo interno */
-  border-radius: 10px;
-  z-index: 1;
-}
-
-.cuadro span {
-  position: relative;
-  z-index: 2;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-.cuadro:hover {
-  width: 700px;
-  height: auto;
-  padding: 2rem;
-}
-
-.cuadro:hover span {
-  display: none; /* se esconde el "Deslice aquí" */
-}
-
-.cuadro form {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.6s ease;
-  position: relative;
-  z-index: 2;
-}
-
-.cuadro:hover form {
-  opacity: 1;
-  transform: scale(1);
 }
