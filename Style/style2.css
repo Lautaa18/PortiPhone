@@ -92,3 +92,33 @@ body{
     text-decoration: underline;
   text-decoration-color: black
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/Imagendefondoinicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  color: white; 
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
