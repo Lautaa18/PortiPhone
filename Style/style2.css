@@ -95,17 +95,27 @@ body{
 body {
   margin: 0;
   padding: 0;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../imagenes/Imagendefondoinicio.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  color: white; 
-  font-family: Arial, sans-serif;
-  position: relative;
-  animation: moverFondo 40s linear infinite;
-  pointer-events: none;
+  animation: moverFondo 10s linear infinite;
+  z-index: -1; 
+  opacity: 0.9; 
 }
+
 @keyframes moverFondo {
   0% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
