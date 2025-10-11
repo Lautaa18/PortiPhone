@@ -235,3 +235,12 @@ input[type="reset"]:hover {
   color: #333;
   animation: aparecer 2s ease-in-out;
 }
+form {
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  animation: deslizar 1.5s ease-out;
+}
