@@ -80,17 +80,50 @@ body{
     margin-left: 8px;
 
 }
-.catalogo2{
-    vertical-align: -5px;
-    margin-left:8px;
-    display:inline-block;
-    padding: 10px 20px;
-    background-color:rgb(86, 238, 164);
-    text-decoration: none;
-    border-radius:8px;
-    transition:0.3s;
-    text-decoration: underline;
-  text-decoration-color: black
+.catalogo2 .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00c6ff, #00ffb3);
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto hover con brillo animado */
+.catalogo2 .btn:hover {
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+  background: linear-gradient(135deg, #00ffb3, #00c6ff);
+}
+
+/* Animación de brillo en movimiento */
+.catalogo2 .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: skewX(-20deg);
+  transition: 0.7s;
+}
+
+.catalogo2 .btn:hover::before {
+  left: 125%;
+}
+
+/* Pequeño efecto al hacer clic */
+.catalogo2 .btn:active {
+  transform: scale(0.95);
 }
 body {
   margin: 0;
