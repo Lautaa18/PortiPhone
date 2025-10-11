@@ -67,7 +67,7 @@ body {
 
 .contacto-header {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1,5rem;
   background: #f0f0f0;
   border-bottom: 1px solid #ddd;
 }
@@ -109,7 +109,7 @@ form {
 fieldset {
   border: 2px solid #e0e0e0;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 legend {
