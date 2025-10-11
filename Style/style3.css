@@ -244,7 +244,7 @@ form {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   animation: deslizar 1.5s ease-out;
 }
-/* Keyframes */
+
 @keyframes fondoAnimado {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -260,4 +260,6 @@ form {
   0% { opacity: 0; transform: translateY(50px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+
 
