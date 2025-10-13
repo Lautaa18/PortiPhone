@@ -65,6 +65,20 @@ body{
     color: rgb(0, 0, 0);
     padding-left: 5%;
 }
+.nombreProducto{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.PrecioProducto{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
 .btn_carrito {  
   position: relative;
