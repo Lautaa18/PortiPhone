@@ -95,16 +95,12 @@ body{
   position: relative;
   overflow: hidden;
 }
-
-/* Efecto hover con brillo animado */
 .catalogo2 .btn:hover {
   color: #fff;
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
   background: linear-gradient(135deg, #00ffb3, #00c6ff);
 }
-
-/* Animación de brillo en movimiento */
 .catalogo2 .btn::before {
   content: "";
   position: absolute;
@@ -116,12 +112,9 @@ body{
   transform: skewX(-20deg);
   transition: 0.7s;
 }
-
 .catalogo2 .btn:hover::before {
   left: 125%;
 }
-
-/* Pequeño efecto al hacer clic */
 .catalogo2 .btn:active {
   transform: scale(0.95);
 }
