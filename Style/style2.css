@@ -65,20 +65,35 @@ body{
     color: rgb(0, 0, 0);
     padding-left: 5%;
 }
+.nombreProducto{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.PrecioProducto{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
-.btn_carrito {
+.btn_carrito {  
+  position: relative;
   margin-top: auto;  
   text-align: center;
-  background: #007bff;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
+  background: #3e3d3d;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px; 
+  border-radius: 0px;
   text-decoration: none;
+  transform: skew(20deg, 0deg);
 }
 .img_carrito{
     vertical-align: -5px;
     margin-left: 8px;
-
 }
 .catalogo2 .btn {
   display: inline-block;
@@ -194,6 +209,49 @@ body::before {
 }
 
 
+.btn_carrito {
+    position: relative;
+    transition: all 0.6s ease;
+    z-index: 1;
+   display: inline-block;
+   overflow: hidden;
+}
+
+.btn_carrito::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: #007bff;
+transform: skew(20deg, 0deg);
+transition: all 0.4s ease;
+
+}
 
 
+.btn_carrito::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    border: 3px solid #007bff;
+    transition: all 0.4s ease;
+    z-index: -1;
+
+}
+.btn_carrito:hover::after{
+  background-color: #007bff;
+  transform: skew(20deg, 0deg) translateX(220px);
+}
+
+.btn_carrito:hover::before{
+  background-color: #007bff;
+  border: 3px solid #007bff;
+  transform: skew(20deg, 0deg) scale(1.1);
+}
 
