@@ -51,7 +51,7 @@ body{
     text-align: center;
     font-family: sans-serif;
     font-size: 20px;
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(14, 13, 13);
     padding: 10px;
     margin-top:30px;
 }
@@ -66,7 +66,7 @@ body{
     padding-left: 5%;
 }
 .nombreProducto{
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
     font-size: 20px;
     margin-top: 10px;
@@ -254,4 +254,18 @@ transition: all 0.4s ease;
   border: 3px solid #007bff;
   transform: skew(20deg, 0deg) scale(1.1);
 }
+.letra {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-right: 0 auto;
 
+}
+
+.ValorPrecio{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
