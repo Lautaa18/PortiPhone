@@ -134,5 +134,19 @@
     <footer class="footer">
         <p>©2025 PortiPhone. Todo lo relacionado a Apple. </p>
     </footer>
+    <script>
+  function filtrar(categoria) {
+    const productos = document.querySelectorAll('.producto');
+    productos.forEach(prod => {
+      if (categoria === 'todos') {
+        prod.classList.remove('oculto');
+      } else if (prod.classList.contains(categoria)) {
+        prod.classList.remove('oculto');
+      } else {
+        prod.classList.add('oculto');
+      }
+    });
+  }
+</script>
 </body>
 </html>
