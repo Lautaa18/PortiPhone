@@ -187,3 +187,20 @@ body{
 .producto6 { grid-area: 2 / 3 / 3 / 4; }
 .producto7 { grid-area: 3 / 1 / 4 / 2; }
 .producto8 { grid-area: 3 / 2 / 4 / 3; }
+
+ ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    cursor: pointer;
+    margin: 5px 0;
+  }
+
+  li:hover {
+    color: #0077ff;
+  }
+  .oculto {
+    display: none;
+  }
