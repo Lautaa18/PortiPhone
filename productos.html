@@ -26,17 +26,18 @@
             </div>
             <div>
                 <ul>
-                    <li>Nuevos</li>
-                    <li>Usados</li>
+                    <li onclick="filtrar('Nuevos')">Nuevos</li>
+                    <li onclick="filtrar('usados')">Usados</li>
                 </ul>
                     <h3>Tipo</h3>
                 <ul>
-                    <li>Iphone</li>
-                    <li>Mac</li>
-                    <li>Ipad</li>
-                    <li>Watch</li>
-                    <li>Accesorios</li>
+                    <li onclick="filtrar('iphone')">Iphone</li>
+                    <li onclick="filtrar('Mac')">Mac</li>
+                    <li onclick="filtrar('ipad')">Ipad</li>
+                    <li onclick="filtrar('Watch')">Watch</li>
+                    <li onclick="filtrar('Accesorios')">Accesorios</li>
                 </ul>
+                <button onclick="filtrar('todos')">Mostrar todos</button>
             </div>
         </aside>
         <section class="productos" >
