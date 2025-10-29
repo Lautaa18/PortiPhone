@@ -20,24 +20,18 @@
     <main class="container">
         <aside class="sidebar">
             <div>
-                <h2>Categorias</h2>
                 <h3>Estados</h3>
-    
-            </div>
-            <div>
-                <ul>
-                    <li onclick="filtrar('Nuevos')">Nuevos</li>
-                    <li onclick="filtrar('usados')">Usados</li>
-                </ul>
-                    <h3>Tipo</h3>
-                <ul>
-                    <li onclick="filtrar('iphone')">Iphone</li>
-                    <li onclick="filtrar('Mac')">Mac</li>
-                    <li onclick="filtrar('ipad')">Ipad</li>
-                    <li onclick="filtrar('Watch')">Watch</li>
-                    <li onclick="filtrar('Accesorios')">Accesorios</li>
-                </ul>
-                <button onclick="filtrar('todos')">Mostrar todos</button>
+        <label><input type="checkbox" class="filtro-estado" value="nuevo"> Nuevos</label>
+        <label><input type="checkbox" class="filtro-estado" value="usado"> Usados</label>
+
+        <h3>Tipo</h3>
+        <label><input type="checkbox" class="filtro-tipo" value="iphone"> iPhone</label>
+        <label><input type="checkbox" class="filtro-tipo" value="mac"> Mac</label>
+        <label><input type="checkbox" class="filtro-tipo" value="ipad"> iPad</label>
+        <label><input type="checkbox" class="filtro-tipo" value="watch"> Watch</label>
+        <label><input type="checkbox" class="filtro-tipo" value="accesorio"> Accesorios</label>
+
+        <button onclick="resetFiltros()" style="margin-top:10px;">Mostrar todos</button>
             </div>
         </aside>
         <section class="productos" >
