@@ -129,19 +129,39 @@
     <footer class="footer">
         <p>©2025 PortiPhone. Todo lo relacionado a Apple. </p>
     </footer>
-    <script>
-  function filtrar(categoria) {
+     <script>
+    const filtrosEstado = document.querySelectorAll('.filtro-estado');
+    const filtrosTipo = document.querySelectorAll('.filtro-tipo');
     const productos = document.querySelectorAll('.producto');
-    productos.forEach(prod => {
-      if (categoria === 'todos') {
-        prod.classList.remove('oculto');
-      } else if (prod.classList.contains(categoria)) {
-        prod.classList.remove('oculto');
-      } else {
-        prod.classList.add('oculto');
-      }
-    });
-  }
-</script>
+
+    // Escuchar cambios en todos los checkboxes
+    filtrosEstado.forEach(f => f.addEventListener('change', aplicarFiltros));
+    filtrosTipo.forEach(f => f.addEventListener('change', aplicarFiltros));
+
+    function aplicarFiltros() {
+      const estadosSeleccionados = Array.from(filtrosEstado)
+        .filter(f => f.checked)
+        .map(f => f.value);
+      const tiposSeleccionados = Array.from(filtrosTipo)
+        .filter(f => f.checked)
+        .map(f => f.value);
+
+      productos.forEach(prod => {
+        const tieneEstado = estadosSeleccionados.length === 0 || estadosSeleccionados.some(e => prod.classList.contains(e));
+        const tieneTipo = tiposSeleccionados.length === 0 || tiposSeleccionados.some(t => prod.classList.contains(t));
+
+        if (tieneEstado && tieneTipo) {
+          prod.classList.remove('oculto');
+        } else {
+          prod.classList.add('oculto');
+        }
+      });
+    }
+
+    function resetFiltros() {
+      document.querySelectorAll('input[type="checkbox"]').forEach(c => c.checked = false);
+      productos.forEach(p => p.classList.remove('oculto'));
+    }
+  </script>
 </body>
 </html>
