@@ -233,3 +233,13 @@ body{
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap; /* permite que bajen a la siguiente línea si no entran */
+  justify-content: center; /* centra las tarjetas */
+  gap: 20px; /* espacio entre productos */
+}
+
+.producto {
+  width: 250px; /* tamaño fijo de cada tarjeta */
+}
