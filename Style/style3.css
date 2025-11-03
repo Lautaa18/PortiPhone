@@ -281,5 +281,16 @@ body::before {
   50% { background-position: 100% 100%; transform: scale(1.05); }
   100% { background-position: 0% 0%; transform: scale(1); }
 }
+.footer{
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+ }
+ button{
+  border: none;
+  padding: 20px 20px;
+  margin: 20px;
+ }
 
 
