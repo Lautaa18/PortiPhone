@@ -225,7 +225,7 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
-  background: #999;
+  background: red;
 }
 
  h1 {
