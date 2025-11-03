@@ -19,29 +19,31 @@
     </header>
     <main class="container">
         <aside class="sidebar">
-            <div>
-                <h2>Categorias</h2>
-                <h3>Estados</h3>
-    
-            </div>
-            <div>
-                <ul>
-                    <li onclick="filtrar('Nuevos')">Nuevos</li>
-                    <li onclick="filtrar('usados')">Usados</li>
-                </ul>
-                    <h3>Tipo</h3>
-                <ul>
-                    <li onclick="filtrar('iphone')">Iphone</li>
-                    <li onclick="filtrar('Mac')">Mac</li>
-                    <li onclick="filtrar('ipad')">Ipad</li>
-                    <li onclick="filtrar('Watch')">Watch</li>
-                    <li onclick="filtrar('Accesorios')">Accesorios</li>
-                </ul>
-                <button onclick="filtrar('todos')">Mostrar todos</button>
-            </div>
-        </aside>
+            <<div class="filtro">
+  <h2>Categorías</h2>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista('estados')">Estados ▼</h3>
+    <ul id="estados" class="lista">
+      <li onclick="filtrarProductos('nuevo')">Nuevos</li>
+      <li onclick="filtrarProductos('usado')">Usados</li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista('tipos')">Tipo ▼</h3>
+    <ul id="tipos" class="lista">
+      <li onclick="filtrarProductos('iphone')">iPhone</li>
+      <li onclick="filtrarProductos('mac')">Mac</li>
+      <li onclick="filtrarProductos('ipad')">iPad</li>
+      <li onclick="filtrarProductos('watch')">Watch</li>
+      <li onclick="filtrarProductos('accesorios')">Accesorios</li>
+    </ul>
+  </div>
+</div>
+        </aside> 
         <section class="productos" >
-            <div class="card producto1">
+            <div class="card producto producto1" data-categoria="nuevo" data-tipo="iphone">
                 <img class="img_product" src="imagenes/ChatGPT Image 1 oct 2025, 18_46_47.png" alt="iphone 16 pro max, 256GB" width="350" height="300">
                 <h3 class="nombreProducto">iPHONE 16 PRO MAX</h3>
                 <p>$1,299 USD</p>
@@ -50,7 +52,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito  <img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto2">
+            <div class="card producto producto2" data-categoria="nuevo" data-tipo="mac">
                 <img class="img_product" src="imagenes/macbook-air-m2.jpg" alt="Macbook air m2" width="350" height="300">
                 <h3 class="nombreProducto">MACBOOK AIR M2</h3>
                 <p>$1,800 USD</p>
@@ -59,7 +61,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito<img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto3">
+            <div class="card producto producto3" data-categoria="nuevo" data-tipo="ipad">
                 <img class="img_product" src="imagenes/ipad pro.png" alt="Ipad pro" width="350" height="300">
                 <h3 class="nombreProducto">iPAD PRO 12.9""</h3>
                 <p>$1.099 USD</p>
@@ -68,7 +70,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito<img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto4">
+            <div class="card producto producto4" data-categoria="nuevo" data-tipo="watch">
                 <img class="img_product" src="imagenes/watch_25x25.png" alt="Watch series 9" width="350" height="300">
                 <h3 class="nombreProducto">WATCH SERIES 9</h3>
                 <p>$399 USD</p>
@@ -77,7 +79,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito<img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto5">
+            <div class="card producto producto5" data-categoria="nuevo" data-tipo="accesorios">
                 <img class="img_product" src="imagenes/airpods_25x25.png" alt="airpods pro 2nd gen" width="20px" height="20px">
                 <h3 class="nombreProducto">AIRPODS PRO 2ND GEN</h3>
                 <p>$249 USD</p>
@@ -86,7 +88,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito<img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto6">
+            <div class="card producto producto6" data-categoria="nuevo" data-tipo="iphone">
                 <img class="img_product" src="imagenes/iphone17,promax.webp" alt="iphone 17 pro max, 512GB" width="70" height="35">
                 <h3 class="nombreProducto">iPHONE 17 PRO MAX</h3>
                 <p>$1,499 USD</p>
@@ -95,7 +97,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito<img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto7">
+            <div class="card producto producto7" data-categoria="usado" data-tipo="accesorios">
                 <img class="img_product" src="imagenes/Cargador.original.jpg" alt="Cargador Anker" width="20" height="20">
                 <h3 class="nombreProducto">Cargador de Anker</h3>
                 <p>$50 USD</p>
@@ -104,7 +106,7 @@
                 <a href="carrito.html" class="btn_carrito">Agregar al carrito  <img class="img_carrito" src="imagenes/carrito.png" alt="carrito" title="carrito" width="20px" height="20px" ></a>
                 </div>
             </div>
-            <div class="card producto8">
+            <div class="card producto producto8" data-categoria="usado" data-tipo="iphone">
                 <img class="img_product" src="imagenes/Iphone15.webp" alt="Iphone 15" width="20" height="20">
                 <h3 class="nombreProducto">IPHONE 15</h3>
                 <p>$700 USD</p>
@@ -135,16 +137,24 @@
     <footer class="footer">
         <p>©2025 PortiPhone. Todo lo relacionado a Apple. </p>
     </footer>
-    <script>
-  function filtrar(categoria) {
-    const productos = document.querySelectorAll('.producto');
+     <script>
+  function toggleLista(id) {
+    const lista = document.getElementById(id);
+    lista.style.display = (lista.style.display === "block") ? "none" : "block";
+  }
+
+  // Filtra los productos por categoría o tipo
+  function filtrarProductos(filtro) {
+    const productos = document.querySelectorAll(".producto");
+
     productos.forEach(prod => {
-      if (categoria === 'todos') {
-        prod.classList.remove('oculto');
-      } else if (prod.classList.contains(categoria)) {
-        prod.classList.remove('oculto');
+      const categoria = prod.dataset.categoria;
+      const tipo = prod.dataset.tipo;
+
+      if (categoria === filtro || tipo === filtro) {
+        prod.style.display = "block";
       } else {
-        prod.classList.add('oculto');
+        prod.style.display = "none";
       }
     });
   }
