@@ -362,3 +362,104 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+
+
+.btn_modal:hover {
+  transform: scale(1.08);
+  color: white;
+  background: linear-gradient(135deg, #00ffb3, #00c6ff);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: aparecerFondo 0.3s ease;
+}
+
+@keyframes aparecerFondo {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.modal-contenido {
+  background: linear-gradient(145deg, #ffffff, #e9e9e9);
+  color: #222;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  animation: aparecerModal 0.4s ease-out;
+  transform: scale(0.9);
+}
+
+@keyframes aparecerModal {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+#cerrar {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cerrar:hover {
+  color: #00c6ff;
+  transform: rotate(90deg);
+}
+
+
+.modal-contenido p {
+  font-size: 20px;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 30px;
+  color: #333;
+}
+
+
+.modal-contenido::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 4px;
+  background: linear-gradient(145deg, #00c6ff, #00ffb3);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: brillo 3s linear infinite;
+}
+
+@keyframes brillo {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
