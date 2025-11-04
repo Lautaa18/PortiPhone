@@ -314,3 +314,54 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+<<<<<<< HEAD
+=======
+.btn_modal {
+  display: block;
+  margin: 30px auto;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_modal:hover {
+  background-color: #0056b3;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-contenido {
+  background-color: white;
+  color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#cerrar {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+>>>>>>> a4342d087c07bc54a46de2d0dc842fd8de014ff8
