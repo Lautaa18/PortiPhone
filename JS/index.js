@@ -24,3 +24,15 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const boton = document.getElementById("prueba");
+
+  if (prueba) {
+    boton.addEventListener("click", (e) => {
+      e.preventDefault(); 
+      alert("Comencemos a realizar tu compra. Presione aceptar y posteriormente presione el color azul de ver catalogo porfavor");
+    });
+  } else {
+    console.error("No se encontró el botón con id 'verCatalogo'");
+  }
+});
