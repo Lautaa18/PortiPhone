@@ -449,7 +449,7 @@ body {
   inset: 0;
   border-radius: 20px;
   padding: 5px;
-  background: linear-gradient(145deg, #00c6ff, #00ffb3);
+  background: linear-gradient(145deg, #7300ff, #b86db5);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
